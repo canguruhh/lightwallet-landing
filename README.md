@@ -4,15 +4,15 @@
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/canguruhh/mvs-lightwallet-landing/master/LICENSE)
-[![Build Status](https://travis-ci.org/canguruhh/mvs-lightwallet-landing.svg?branch=master)](https://travis-ci.org/canguruhh/mvs-lightwallet-landing)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/canguruhh/lightwallet-landing/master/LICENSE)
+[![Build Status](https://travis-ci.org/canguruhh/lightwallet-landing.svg?branch=master)](https://travis-ci.org/canguruhh/lightwallet-landing)
 
 ## Download and Installation
 
-Clone the repo: `git clone https://github.com/canguruhh/mvs-lightwallet-landing.git`
+Clone the repo: `git clone https://github.com/canguruhh/lightwallet-landing.git`
 Install dependencies: `npm install`
 
-* [Fork, Clone, or Download on GitHub](https://github.com/canguruhh/mvs-lightwallet-landing)
+* [Fork, Clone, or Download on GitHub](https://github.com/canguruhh/lightwallet-landing)
 
 #### Gulp Tasks
 
@@ -29,4 +29,4 @@ You should install the gulp taskrunner: `npm i -g gulp`
 
 ## Bugs and Issues
 
-Have a bug or an issue? [Open a new issue](https://github.com/canguruhh/mvs-lightwallet-landing/issues).
+Have a bug or an issue? [Open a new issue](https://github.com/canguruhh/lightwallet-landing/issues).
