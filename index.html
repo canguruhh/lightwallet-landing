@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app" lang="en">
 <head>
 <meta charset="utf-8">
 <title>MyETPWallet - Metaverse Ligtwallet</title>
@@ -14,8 +14,12 @@
 <link rel="stylesheet" href="css/owl.theme.min.css">
 <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 <link href="css/style.min.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+<script type="text/javascript" src="vendor/angular-translate/dist/angular-translate.min.js"></script>
+<script type="text/javascript" src="vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+<script type="text/javascript" src="js/app.min.js"></script>
 </head>
-<body>
+<body ng-controller="landing">
 <div class="wrapper">
   <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -25,8 +29,10 @@
           <a class="navbar-brand page-scroll" href="#main"><img src="icons/metaverse.png" height="48" alt="iLand" /></a> </div>
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a class="page-scroll" href="#features">Features</a></li>
+            <li><a class="page-scroll" href="#features" translate="MENU.FEATURES"></a></li>
             <li><a class="page-scroll" href="#about">About</a></li>
+            <li><a ng-click="changeLanguage('zh')">Chinese</a></li>
+            <li><a ng-click="changeLanguage('en')">English</a></li>
           </ul>
         </div>
       </div>
@@ -40,6 +46,16 @@
           <div class="hero-content">
             <h1 class="wow fadeInUp" data-wow-delay="0.1s">MyETPWallet</h1>
             <p class="wow fadeInUp" data-wow-delay="0.2s"> The Metaverse Blockchain lightwallet wallet. Use the Metaverse infrastructure to easily create a digital identity (Avatar) and register your own tokens on the Blockchain.</p>
+<div>
+
+	<div ng-click="changeLanguage('de')">de</div>
+	<div ng-click="changeLanguage('en')">en</div>
+	{{'TITLE'|translate}}
+	      <label>Name:</label>
+	            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+		          <hr>
+			        <h1>Hello {{yourName}}!</h1>
+				    </div>
             <div class="sub-form wow fadeInUp" data-wow-delay="0.3s">
               <form class="subscribe-form wow zoomIn" action="https://app.myetpwallet.com/">
                   <button type="submit" class="btn btn-primary btn-action btn-fill">Enter Wallet</button>
@@ -223,7 +239,7 @@
             <div class="pull-right">
             <a class="github-button pull-right" href="https://github.com/mvs-org/lightwallet/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue mvs-org/lightwallet on GitHub">Issue</a>
             </div>
-            <p>For help please report an issue on GitHub. You can also contact us via the following channels:</p>
+	    <p translate="MENU.FEATURES"></p>
             <div class="social">
                 <ul class="n_nav">
                     <li><a href="http://blog.mvs.org/" target="blank"><img src="images/blog.svg" class="img-responsive" alt="blog"></a></li>

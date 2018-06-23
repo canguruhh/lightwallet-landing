@@ -21,6 +21,14 @@ gulp.task('html', function() {
     .pipe(gulp.dest('./dist/'))
 });
 
+
+gulp.task('lang', function() {
+  return gulp.src([
+      './lang/*',
+    ])
+    .pipe(gulp.dest('./dist/lang'))
+});
+
 gulp.task('assets', function() {
   gulp.src([
       './images/*',
@@ -46,6 +54,20 @@ gulp.task('vendor', function() {
       './node_modules/font-awesome/**/*'
     ])
     .pipe(gulp.dest('./dist/vendor/font-awesome'))
+
+  // AngularJS
+  gulp.src([
+      './node_modules/angular/**/*'
+    ])
+    .pipe(gulp.dest('./dist/vendor/angular'))
+  gulp.src([
+      './node_modules/angular-translate/**/*'
+    ])
+    .pipe(gulp.dest('./dist/vendor/angular-translate'))
+  gulp.src([
+      './node_modules/angular-translate-loader-static-files/**/*'
+    ])
+    .pipe(gulp.dest('./dist/vendor/angular-translate-loader-static-files'))
 
   // jQuery
   gulp.src([
@@ -106,7 +128,7 @@ gulp.task('js:minify', function() {
 gulp.task('js', ['js:minify']);
 
 // Default task
-gulp.task('default', ['css', 'js', 'vendor', 'html', 'assets']);
+gulp.task('default', ['css', 'lang', 'js', 'vendor', 'html', 'assets']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -118,8 +140,9 @@ gulp.task('browserSync', function() {
 });
 
 // Dev task
-gulp.task('dev', ['index', 'css', 'js', 'browserSync'], function() {
+gulp.task('dev', ['html', 'lang', 'css', 'js', 'browserSync'], function() {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
+  gulp.watch('./lang/*.json', ['lang']);
   gulp.watch('./**/*.html', [ 'html', browserSync.reload ]);
 });

@@ -4,9 +4,9 @@
     "version": "0.3.1",
     "description": "Landing page for the Metaverse lightwallet.",
     "keywords": [
-	    "Metaverse",
-	    "Blockchain",
-	    "lightwallet"
+        "Metaverse",
+        "Blockchain",
+        "lightwallet"
     ],
     "homepage": "https://www.myetpwallet.com",
     "bugs": {
@@ -20,6 +20,9 @@
         "url": "https://github.com/canguruhh/mvs-lightwallet-landing.git"
     },
     "dependencies": {
+        "angular": "^1.7.2",
+        "angular-translate": "^2.18.1",
+        "angular-translate-loader-static-files": "^2.18.1",
         "bootstrap": "3.3.6",
         "font-awesome": "^4.7.0",
         "jquery": "2.1.1"
