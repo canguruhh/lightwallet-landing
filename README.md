@@ -1,9 +1,4 @@
 # [MyETPWallet langing page](https://www.myetpwallet.com/)
-
-## Preview
-
-## Status
-
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/canguruhh/lightwallet-landing/master/LICENSE)
 [![Build Status](https://travis-ci.org/canguruhh/lightwallet-landing.svg?branch=master)](https://travis-ci.org/canguruhh/lightwallet-landing)
 
