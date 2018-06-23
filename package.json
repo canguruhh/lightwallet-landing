@@ -1,0 +1,36 @@
+{
+    "title": "mvs-lightwallet-landing",
+    "name": "mvs-lightwallet-landing",
+    "version": "0.3.1",
+    "description": "Landing page for the Metaverse lightwallet.",
+    "keywords": [
+	    "Metaverse",
+	    "Blockchain",
+	    "lightwallet"
+    ],
+    "homepage": "https://www.myetpwallet.com",
+    "bugs": {
+        "url": "https://github.com/canguruhh/mvs-lightwallet-landing/issues",
+        "email": "sven.mutzl@mvs.org"
+    },
+    "license": "MIT",
+    "author": "Sven Mutzl",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/canguruhh/mvs-lightwallet-landing.git"
+    },
+    "dependencies": {
+        "bootstrap": "3.3.6",
+        "font-awesome": "^4.7.0",
+        "jquery": "2.1.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.24.3",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.9.4",
+        "gulp-header": "2.0.5",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "4.0.1",
+        "gulp-uglify": "3.0.0"
+    }
+}
