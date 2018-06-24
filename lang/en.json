@@ -9,7 +9,8 @@
         "ENTER_WALLET": "Enter Wallet"
     },
     "GET_IT": {
-        "OPEN_IN_BROWSER": "Open in browser"
+        "OPEN_IN_BROWSER": "Open in browser",
+        "DOWNLOAD_APK": "Download apk"
     },
     "FEATURES": {
         "HEADLINE": "Features",

@@ -1,6 +1,6 @@
 var app = angular.module('app', ['pascalprecht.translate','ngCookies']);
-angular.
-module('app').component('feature', {
+
+app.component('feature', {
     template: '<div class="icon"> <img ng-if="$ctrl.image" ng-src="{{$ctrl.image}}"> <i ng-if="$ctrl.icon" ng-class="$ctrl.icon"></i></div> </div><div class="feature-single"><h1>{{$ctrl.headline|translate}}</h1><p style="white-space: pre-wrap;">{{$ctrl.text|translate}}</p></div>',
     bindings: {
         feature: '<',

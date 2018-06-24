@@ -1,215 +1,221 @@
 <!DOCTYPE html>
 <html ng-app="app" lang="en">
-<head>
-<meta charset="utf-8">
-<title>MyETPWallet - Metaverse Ligtwallet</title>
-<link rel="icon" href="icons/logo.png" type="image/png" sizes="16x16">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Ligtwallet for the Metaverse Blockchain. ETP and Smart Assets.">
-<meta name="keywords" content="metaverse, ETP, blockchain, wallet, zengold, parcelx">
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
-<script type="text/javascript" src="vendor/angular-translate/dist/angular-translate.min.js"></script>
-<script type="text/javascript" src="vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
-<script type="text/javascript" src="vendor/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
-<script type="text/javascript" src="vendor/angular-cookies/angular-cookies.min.js"></script>
-<script type="text/javascript" src="js/app.min.js"></script>
-<link href="css/style.min.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.min.css">
-</head>
-<body>
-<div class="wrapper">
-  <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container"> 
-        <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand page-scroll" href="#main"><img src="icons/metaverse.png" height="48" alt="Metaverse" /></a> </div>
-        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav" ng-controller="language">
-            <li><a class="page-scroll" href="#features" translate="MENU.FEATURES"></a></li>
-            <li><a class="page-scroll" href="#about" translate="MENU.ABOUT"></a></li>
-            <li ng-hide="language=='zh'"><a ng-click="changeLanguage('zh')">中文</a></li>
-            <li ng-hide="language=='en'"><a ng-click="changeLanguage('en')">English</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="main app form" id="main">
-    <div class="hero-section">
-      <div class="container nopadding">
-        <div class="col-md-5"> <img class="img-responsive wow fadeInUp mac" data-wow-delay="0.1s" src="images/mac.png" alt="App" /> </div>
-        <div class="col-md-7">
-          <div class="hero-content">
-              <h1 class="wow fadeInUp" data-wow-delay="0.1s" translate="INTRO.HEADLINE"></h1>
-              <p class="wow fadeInUp" data-wow-delay="0.2s" translate="INTRO.TEXT"></p>
-            <div class="sub-form wow fadeInUp" data-wow-delay="0.3s">
-              <form class="subscribe-form wow zoomIn" action="https://app.myetpwallet.com/">
-                  <button type="submit" class="btn btn-primary btn-action btn-fill" translate="INTRO.ENTER_WALLET"></button>
-            </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="client-section">
-      <div class="container text-center">
-        <div class="clients owl-carousel owl-theme">
-            <div class="single"> <img src="icons/PARCELX.GPX.png" alt="ParcelX" /> </div>
-          <div class="single"> <img src="icons/MVS.ZGC.png" alt="Zengold" /> </div>
-          <div class="single"> <img class="csd" src="icons/CSD.CSD.png" alt="CSD" /> </div>
-          <div class="single"> <img src="icons/logo.png" alt="ETP" /> </div>
-          <div class="single"> <img src="icons/MVS.ZDC.png" alt="Zendao" /> </div>
-          <div class="single"> <img src="icons/MVS.HUG.png" alt="MVS Hug" /> </div>
-          <div class="single"> <img src="icons/SDG.png" alt="SDG" /> </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="pitch text-center" id="enter">
-      <div class="container">
-        <div class="col-md-12">
-          <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
-                  <a href="https://play.google.com/store/apps/details?id=com.myetpwallet.app">
-            <div class="pitch-content">
-              <img src="images/google-store.png">
-            </div>
-              </a>
-          </div>
-          <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
-              <a href="https://itunes.apple.com/us/app/myetpwallet/id1354404036">
-            <div class="pitch-content">
-              <img src="images/apple-store.png">
-            </div>
-              </a>
-          </div>
-          <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
-              <a href="https://app.myetpwallet.com">
-            <div class="pitch-icon"><i class="fas fa-globe"></i></div>
-            <div class="pitch-content">
-                <h1 translate="GET_IT.OPEN_IN_BROWSER"></h1>
-            </div>
-              </a>
-          </div>
+<head>
+    <meta charset="utf-8">
+    <title>MyETPWallet - Metaverse Ligtwallet</title>
+    <link rel="icon" href="icons/logo.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ligtwallet for the Metaverse Blockchain. ETP and Smart Assets.">
+    <meta name="keywords" content="metaverse, ETP, blockchain, wallet, zengold, parcelx">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-translate/dist/angular-translate.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-cookies/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand page-scroll" href="#main"><img src="icons/metaverse.png" height="48" alt="Metaverse" /></a> </div>
+                    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" ng-controller="language">
+                            <li><a class="page-scroll" href="#features" translate="MENU.FEATURES"></a></li>
+                            <li><a class="page-scroll" href="#about" translate="MENU.ABOUT"></a></li>
+                            <li ng-hide="language=='zh'"><a ng-click="changeLanguage('zh')">中文</a></li>
+                            <li ng-hide="language=='en'"><a ng-click="changeLanguage('en')">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
-    </div>
-    <div class="app-features text-center" id="features">
-      <div class="container">
-          <h1 class="wow fadeInDown" data-wow-delay="0.1s" translate="FEATURES.HEADLINE"></h1>
-          <p class="wow fadeInDown" data-wow-delay="0.2s" translate="FEATURES.TEXT"></p>
-        <div class="col-md-4 features-left">
-          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
-            <feature feature="'DIGITAL_IDENTITY'" image="'icons/avatar.png'"></feature>
-          </div>
-          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
-              <feature feature="'MIT'" image="'icons/mit.png'"></feature>
-          </div>
-          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
-              <feature feature="'CERTIFICATES'" icon="'fas fa-file-o'"></feature>
-          </div>
-        </div>
-        <div class="col-md-4 wow fadeInDown" data-wow-delay="0.5s"> <img class="img-responsive" src="images/phone.png" alt="App" /> </div>
-        <div class="col-md-4 features-left">
-            <div class="col-md-12 wow fadeInDown" data-wow-delay="0.3s">
-                <feature feature="'MST'" image="'icons/mst.png'"></feature>
+        <div class="main app form" id="main">
+            <div class="hero-section">
+                <div class="container nopadding">
+                    <div class="col-md-5"> <img class="img-responsive wow fadeInUp mac" data-wow-delay="0.1s" src="images/mac.png" alt="App" /> </div>
+                    <div class="col-md-7">
+                        <div class="hero-content">
+                            <h1 class="wow fadeInUp" data-wow-delay="0.1s" translate="INTRO.HEADLINE"></h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s" translate="INTRO.TEXT"></p>
+                            <div class="sub-form wow fadeInUp" data-wow-delay="0.3s">
+                                <form class="subscribe-form wow zoomIn" action="https://app.myetpwallet.com/">
+                                    <button type="submit" class="btn btn-primary btn-action btn-fill" translate="INTRO.ENTER_WALLET"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.7s">
-              <feature feature="'ETP_DEPOSIT'" image="'icons/ETP.png'"></feature>
-          </div>
-          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
-              <feature feature="'MULTILANGUAGE'" icon="'fas fa-language'"></feature>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="opensource-sub">
-      <div class="container">
-        <div class="sub-inner">
-            <h1 class="wow fadeInUp" translate="OPENSOURCE.HEADLINE"></h1>
-            <p>
-                <b>git clone</b> https://github.com/mvs-org/lightwallet.git<br>
-                <b>npm install</b> -g ionic<br>
-                <b>ionic</b> serve
-            </p>
-            <span class="right-space">
+
+            <div class="client-section">
+                <div class="container text-center">
+                    <div class="clients owl-carousel owl-theme">
+                        <div class="single"> <img src="icons/PARCELX.GPX.png" alt="ParcelX" /> </div>
+                        <div class="single"> <img src="icons/MVS.ZGC.png" alt="Zengold" /> </div>
+                        <div class="single"> <img class="csd" src="icons/CSD.CSD.png" alt="CSD" /> </div>
+                        <div class="single"> <img src="icons/logo.png" alt="ETP" /> </div>
+                        <div class="single"> <img src="icons/MVS.ZDC.png" alt="Zendao" /> </div>
+                        <div class="single"> <img src="icons/MVS.HUG.png" alt="MVS Hug" /> </div>
+                        <div class="single"> <img src="icons/SDG.png" alt="SDG" /> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pitch text-center" id="enter">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
+                            <a href="https://play.google.com/store/apps/details?id=com.myetpwallet.app">
+                                <div class="pitch-content">
+                                    <img src="images/google-store.png"><br><br>
+                                    <a href="https://metaverse.nyc3.digitaloceanspaces.com/lightwallet/app/mvs-lw-0.3.1r2.apk">
+                                        <div class="btn btn-primary btn-action btn-fill" translate="GET_IT.DOWNLOAD_APK"></div>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
+                            <a href="https://itunes.apple.com/us/app/myetpwallet/id1354404036">
+                                <div class="pitch-content">
+                                    <img src="images/apple-store.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
+                            <a href="https://app.myetpwallet.com">
+                                <div class="pitch-icon"><i class="fas fa-globe"></i></div>
+                                <div class="pitch-content">
+                                    <h1 translate="GET_IT.OPEN_IN_BROWSER"></h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-features text-center" id="features">
+                <div class="container">
+                    <h1 class="wow fadeInDown" data-wow-delay="0.1s" translate="FEATURES.HEADLINE"></h1>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s" translate="FEATURES.TEXT"></p>
+                    <div class="col-md-4 features-left">
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
+                            <feature feature="'DIGITAL_IDENTITY'" image="'icons/avatar.png'"></feature>
+                        </div>
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
+                            <feature feature="'MIT'" image="'icons/mit.png'"></feature>
+                        </div>
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
+                            <feature feature="'CERTIFICATES'" icon="'fas fa-file-o'"></feature>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInDown" data-wow-delay="0.5s"> <img class="img-responsive" src="images/phone.png" alt="App" /> </div>
+                    <div class="col-md-4 features-left">
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.3s">
+                            <feature feature="'MST'" image="'icons/mst.png'"></feature>
+                        </div>
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.7s">
+                            <feature feature="'ETP_DEPOSIT'" image="'icons/ETP.png'"></feature>
+                        </div>
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
+                            <feature feature="'MULTILANGUAGE'" icon="'fas fa-language'"></feature>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="opensource-sub">
+                <div class="container">
+                    <div class="sub-inner">
+                        <h1 class="wow fadeInUp" translate="OPENSOURCE.HEADLINE"></h1>
+                        <p>
+                            <b>git clone</b> https://github.com/mvs-org/lightwallet.git<br>
+                            <b>npm install</b> -g ionic<br>
+                            <b>ionic</b> serve
+                        </p>
+                        <span class="right-space">
             <a class="github-button" href="https://github.com/mvs-org/lightwallet/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork mvs-org/lightwallet on GitHub">Fork</a>
             </span>
-            <span class="right-space">
+                        <span class="right-space">
             <a class="github-button" href="https://github.com/mvs-org/lightwallet" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star mvs-org/lightwallet on GitHub">Star</a>
             </span>
-            <a class="github-button" href="https://github.com/mvs-org/lightwallet/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue mvs-org/lightwallet on GitHub">Issue</a>
-        </div>
-      </div>
-    </div>
+                        <a class="github-button" href="https://github.com/mvs-org/lightwallet/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue mvs-org/lightwallet on GitHub">Issue</a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="app-features text-center" id="about">
-      <div class="container">
-        <h1 class="wow fadeInDown" data-wow-delay="0.2s">About</h1>
-        <p class="wow fadeInDown" data-wow-delay="0.2s"></p>
-        <div class="col-md-3 features-left">
-          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
-              <feature feature="'OPENSOURCE'" domain="'ABOUT'" icon="'fas fa-code'"></feature>
-          </div>
-        </div>
-        <div class="col-md-3 features-left">
-          <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
-              <feature feature="'SECURITY'" domain="'ABOUT'" icon="'fas fa-shield'"></feature>
-          </div>
-        </div>
-        <div class="col-md-3 wow fadeInDown features-left">
-            <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
-                <feature feature="'SPEED'" domain="'ABOUT'" icon="'fas fa-clock-o'"></feature>
+            <div class="app-features text-center" id="about">
+                <div class="container">
+                    <h1 class="wow fadeInDown" data-wow-delay="0.2s">About</h1>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s"></p>
+                    <div class="col-md-3 features-left">
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
+                            <feature feature="'OPENSOURCE'" domain="'ABOUT'" icon="'fas fa-code'"></feature>
+                        </div>
+                    </div>
+                    <div class="col-md-3 features-left">
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
+                            <feature feature="'SECURITY'" domain="'ABOUT'" icon="'fas fa-shield'"></feature>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInDown features-left">
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
+                            <feature feature="'SPEED'" domain="'ABOUT'" icon="'fas fa-clock-o'"></feature>
+                        </div>
+                    </div>
+                    <div class="col-md-3 features-left">
+                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
+                            <feature feature="'MOBILE_APPS'" domain="'ABOUT'" icon="'fas fa-mobile'"></feature>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 features-left">
-            <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
-                <feature feature="'MOBILE_APPS'" domain="'ABOUT'" icon="'fas fa-mobile'"></feature>
+            <!-- Footer Section -->
+            <div class="footer">
+                <div class="container" id="contact">
+                    <div class="col-md-7"> <img src="icons/metaverse.png" height="64" alt="Image" />
+                        <p translate="FOOTER.TEXT"> </p>
+                        <div class="footer-text">
+                            <p translate="FOOTER.COPYRIGHT" translate-values="{ year: '2016-2018'}"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h1 translate="FOOTER.HELP_TEXT"></h1>
+                        <div class="pull-right">
+                            <a class="github-button" href="https://github.com/mvs-org/lightwallet/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue mvs-org/lightwallet on GitHub">Issue</a>
+                        </div>
+                        <p translate="FOOTER.CONTACT_US"></p>
+                        <div class="social">
+                            <ul class="n_nav">
+                                <li><a href="http://blog.mvs.org/" target="blank"><img src="images/blog.svg" class="img-responsive" alt="blog"></a></li>
+                                <li><a href="https://github.com/mvs-org/lightwallet" target="blank"><img src="images/git.svg" class="img-responsive" alt="github"></a></li>
+                                <li><a href="https://twitter.com/mvs_org" target="blank"><img src="images/twitter.svg" class="img-responsive" alt="twitter"></a></li>
+                                <li><a href="https://www.facebook.com/mvsofficial/" target="blank"><img src="images/facebook.svg" class="img-responsive" alt="facebook"></a></li>
+                                <li><a href="https://medium.com/@mvs_org" target="blank"><img src="images/medium.svg" class="img-responsive" alt="medium"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a id="back-top" class="back-to-top page-scroll" href="#main"> <i class="ion-ios-arrow-thin-up"></i> </a>
         </div>
-      </div>
     </div>
-    <!-- Footer Section -->
-    <div class="footer">
-      <div class="container" id="contact">
-        <div class="col-md-7"> <img src="icons/metaverse.png" height="64" alt="Image" />
-            <p translate="FOOTER.TEXT"> </p>
-          <div class="footer-text">
-              <p translate="FOOTER.COPYRIGHT" translate-values="{ year: '2016-2018'}"></p>
-          </div>
-        </div>
-        <div class="col-md-5">
-            <h1 translate="FOOTER.HELP_TEXT"></h1>
-            <div class="pull-right">
-            <a class="github-button" href="https://github.com/mvs-org/lightwallet/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue mvs-org/lightwallet on GitHub">Issue</a>
-            </div>
-	    <p translate="FOOTER.CONTACT_US"></p>
-            <div class="social">
-                <ul class="n_nav">
-                    <li><a href="http://blog.mvs.org/" target="blank"><img src="images/blog.svg" class="img-responsive" alt="blog"></a></li>
-                    <li><a href="https://github.com/mvs-org/lightwallet" target="blank"><img src="images/git.svg" class="img-responsive" alt="github"></a></li>
-                    <li><a href="https://twitter.com/mvs_org" target="blank"><img src="images/twitter.svg" class="img-responsive" alt="twitter"></a></li>
-                    <li><a href="https://www.facebook.com/mvsofficial/" target="blank"><img src="images/facebook.svg" class="img-responsive" alt="facebook"></a></li>
-                    <li><a href="https://medium.com/@mvs_org" target="blank"><img src="images/medium.svg" class="img-responsive" alt="medium"></a></li>
-                </ul>
-            </div>
-        </div>
-      </div>
-    </div>
-    <a id="back-top" class="back-to-top page-scroll" href="#main"> <i class="ion-ios-arrow-thin-up"></i> </a> 
-  </div>
-</div>
-<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script> 
-<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<script type="text/javascript" src="js/plugins.min.js"></script> 
-<script type="text/javascript" src="js/menu.min.js"></script> 
-<script type="text/javascript" src="js/custom.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript" src="js/plugins.min.js"></script>
+    <script type="text/javascript" src="js/menu.min.js"></script>
+    <script type="text/javascript" src="js/custom.min.js"></script>
 </body>
+
 </html>
