@@ -44,6 +44,7 @@
     "FOOTER": {
         "TEXT": "Metaverse Foundation aims to maintain the normal operation of Metaverse Blockchain and build a complete and affluent Metaverse Blockchain Ecosystem. The Foundation’s investment and guidance is based on the development of all industrial links derived from the Metaverse Blockchain.",
         "CONTACT_US": "Contact us",
-        "HELP_TEXT": "For help please report an issue on GitHub. You can also contact us via the following channels:"
+        "HELP_TEXT": "For help please report an issue on GitHub. You can also contact us via the following channels:",
+        "COPYRIGHT": "Copyright {{year}} Metaverse Foundation. All Rights Reserved."
     }
 }

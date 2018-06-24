@@ -21,8 +21,10 @@
     },
     "dependencies": {
         "angular": "^1.7.2",
+        "angular-cookies": "^1.7.2",
         "angular-translate": "^2.18.1",
         "angular-translate-loader-static-files": "^2.18.1",
+        "angular-translate-storage-cookie": "^2.18.1",
         "bootstrap": "3.3.6",
         "font-awesome": "^4.7.0",
         "jquery": "2.1.1"

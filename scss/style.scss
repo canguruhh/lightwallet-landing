@@ -1116,6 +1116,10 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
     }
 }
 
+.right-space {
+    margin-right: 20px;
+}
+
 .software .feature-sub {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.99)), url(../images/app_bg1.jpg);
 	background-repeat: no-repeat;
@@ -1520,4 +1524,3 @@ font-size: 12px;
          margin-right: 5px;
      }
  }
-
