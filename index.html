@@ -19,7 +19,7 @@
 <script type="text/javascript" src="vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
 <script type="text/javascript" src="js/app.min.js"></script>
 </head>
-<body ng-controller="landing">
+<body>
 <div class="wrapper">
   <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -28,11 +28,11 @@
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
           <a class="navbar-brand page-scroll" href="#main"><img src="icons/metaverse.png" height="48" alt="iLand" /></a> </div>
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" ng-controller="language">
             <li><a class="page-scroll" href="#features" translate="MENU.FEATURES"></a></li>
-            <li><a class="page-scroll" href="#about">About</a></li>
-            <li><a ng-click="changeLanguage('zh')">Chinese</a></li>
-            <li><a ng-click="changeLanguage('en')">English</a></li>
+            <li><a class="page-scroll" href="#about" translate="MENU.ABOUT"></a></li>
+            <li ng-hide="language=='zh'"><a ng-click="changeLanguage('zh')">中文</a></li>
+            <li ng-hide="language=='en'"><a ng-click="changeLanguage('en')">English</a></li>
           </ul>
         </div>
       </div>
@@ -44,21 +44,11 @@
         <div class="col-md-5"> <img class="img-responsive wow fadeInUp mac" data-wow-delay="0.1s" src="images/mac.png" alt="App" /> </div>
         <div class="col-md-7">
           <div class="hero-content">
-            <h1 class="wow fadeInUp" data-wow-delay="0.1s">MyETPWallet</h1>
-            <p class="wow fadeInUp" data-wow-delay="0.2s"> The Metaverse Blockchain lightwallet wallet. Use the Metaverse infrastructure to easily create a digital identity (Avatar) and register your own tokens on the Blockchain.</p>
-<div>
-
-	<div ng-click="changeLanguage('de')">de</div>
-	<div ng-click="changeLanguage('en')">en</div>
-	{{'TITLE'|translate}}
-	      <label>Name:</label>
-	            <input type="text" ng-model="yourName" placeholder="Enter a name here">
-		          <hr>
-			        <h1>Hello {{yourName}}!</h1>
-				    </div>
+              <h1 class="wow fadeInUp" data-wow-delay="0.1s" translate="INTRO.HEADLINE"></h1>
+              <p class="wow fadeInUp" data-wow-delay="0.2s" translate="INTRO.TEXT"></p>
             <div class="sub-form wow fadeInUp" data-wow-delay="0.3s">
               <form class="subscribe-form wow zoomIn" action="https://app.myetpwallet.com/">
-                  <button type="submit" class="btn btn-primary btn-action btn-fill">Enter Wallet</button>
+                  <button type="submit" class="btn btn-primary btn-action btn-fill" translate="INTRO.ENTER_WALLET"></button>
             </form>
             </div>
           </div>
@@ -102,7 +92,7 @@
             <div class="pitch-icon"><i class="fas fa-globe"></i></div>
             <div class="pitch-content">
 	
-              <h1>Open in browser</h1>
+                <h1 translate="GET_IT.OPEN_IN_BROWSER"></h1>
             </div>
               </a>
           </div>
@@ -111,30 +101,30 @@
     </div>
     <div class="app-features text-center" id="features">
       <div class="container">
-        <h1 class="wow fadeInDown" data-wow-delay="0.1s">Features</h1>
-        <p class="wow fadeInDown" data-wow-delay="0.2s">With the latest supernova upgrade we were able to activate new functions.</p>
+          <h1 class="wow fadeInDown" data-wow-delay="0.1s" translate="FEATURES.HEADLINE"></h1>
+          <p class="wow fadeInDown" data-wow-delay="0.2s" translate="FEATURES.TEXT"></p>
         <div class="col-md-4 features-left">
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
             <div class="icon"> <img src="icons/avatar.png"> </div>
             <div class="feature-single">
-              <h1>Digital Identity</h1>
-              <p> Create your own avatar. </p>
+                <h1 translate="FEATURES.DIGITAL_IDENTITY"></h1>
+                <p translate="FEATURES.DIGITAL_IDENTITY_TEXT"></p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
               <div class="icon"> <img src="icons/mit.png"> </div>
               <div class="feature-single">
-                  <h1>Identifiable Token</h1>
-                  <p> Create your own MIT (Metaverse Identifiable Token). A MIT is a single entity record on the Metaverse Blockchain. You can freely exchange it with other avatars. </p>
+                  <h1 translate="FEATURES.MIT"></h1>
+                  <p translate="FEATURES.MIT_TEXT"></p>
               </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
-              <div class="icon"> 
+              <div class="icon">
 		      <i class="fas fa-file-o"></i>
  </div>
               <div class="feature-single">
-                  <h1>Certificates</h1>
-                  <p> Let your avatar register certificates for MST symbols and domains. </p>
+                  <h1 translate="FEATURES.CERTIFICATES"></h1>
+                  <p translate="FEATURES.CERTIFIFATES_TEXT"></p>
               </div>
           </div>
         </div>
@@ -143,23 +133,23 @@
             <div class="col-md-12 wow fadeInDown" data-wow-delay="0.3s">
                 <div class="icon"> <img src="icons/mst.png"> </div>
                 <div class="feature-single">
-                    <h1>Smart Token</h1>
-                    <p> You can easily register your own MST (Metaverse Smart Token) on the Blockchain. </p>
+                    <h1 translate="FEATURES.MST"></h1>
+                    <p translate="FEATURES.MST_TEXT"></p>
                 </div>
             </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.7s">
             <div class="icon"> <img src="icons/ETP.png"> </div>
             <div class="feature-single">
-              <h1>ETP deposit</h1>
-              <p> Lock your ETP for a number of blocks and earn interest. </p>
+                <h1 translate="FEATURES.ETP_DEPOSIT"></h1>
+                <p translate="FEATURES.ETP_DEPOSIT"></p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
               <div class="icon">
 		      <i class="fas fa-language"></i></div>
               <div class="feature-single">
-                  <h1>Multilanguage</h1>
-                  <p>The wallet has supports various languages. We are always happy about new translation. Please contact us if you want to support.</p>
+                  <h1 translate="FEATURES.MULTILANGUAGE"></h1>
+                  <p translate="FEATURES.MULTILANGUAGE_TEXT"></p>
               </div>
           </div>
         </div>
@@ -169,7 +159,7 @@
     <div class="opensource-sub">
       <div class="container">
         <div class="sub-inner">
-            <h1 class="wow fadeInUp">How do you like your lightwallet?</h1>
+            <h1 class="wow fadeInUp" translate="OPENSOURCE.HEADLINE"></h1>
             <p>
                 <b>git clone</b> https://github.com/mvs-org/lightwallet.git<br>
                 <b>npm install</b> -g ionic<br>
@@ -190,8 +180,8 @@
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
 		  <div class="icon"> <i class="fas fa-code"></i></div>
             <div class="feature-single">
-              <h1>Opensource</h1>
-              <p>The lightwallet is 100% opensource. We need every helping hand. Please contact us if you want to join our awesome community.</p>
+                <h1 translate="ABOUT.OPENSOURCE"></h1>
+                <p translate="ABOUT.OPENSOURCE_TEXT"></p>
             </div>
           </div>
         </div>
@@ -199,8 +189,8 @@
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
 		  <div class="icon"> <i class="fas fa-shield"></i></div>
               <div class="feature-single">
-                  <h1>Security</h1>
-                  <p>The private keys will only be stored on your own device. All transactions are signed locally.</p>
+                  <h1 translate="ABOUT.SECURITY"></h1>
+                  <p translate="ABOUT.SECURITY_TEXT"></p>
               </div>
           </div>
         </div>
@@ -208,8 +198,8 @@
             <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
 	<div class="icon"> <i class="fas fa-clock-o"></i></div>
                 <div class="feature-single">
-                    <h1>Speed</h1>
-                    <p>Without having to download the whole blockchain your wallet will be ready within the blink of an eye.</p>
+                    <h1 translate="ABOUT.SPEED"></h1>
+                    <p translate="ABOUT.SPEED"></p>
                 </div>
             </div>
         </div>
@@ -217,8 +207,8 @@
             <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
 	<div class="icon"> <i class="fas fa-mobile"></i></div>
                 <div class="feature-single">
-                    <h1>Mobile Apps</h1>
-                    <p> You can use the browser version but we also have official mobile apps for Android and iOS. </p>
+                    <h1 translate="ABOUT.MOBILE_APPS"></h1>
+                    <p translate="ABOUT.MOBILE_APPS_TEXT"></p>
                 </div>
             </div>
         </div>
@@ -228,18 +218,18 @@
     <div class="footer">
       <div class="container" id="contact">
         <div class="col-md-7"> <img src="icons/metaverse.png" height="64" alt="Image" />
-            <p> Metaverse Foundation aims to maintain the normal operation of Metaverse Blockchain and build a complete and affluent Metaverse Blockchain Ecosystem. The Foundation’s investment and guidance is based on the development of all industrial links derived from the Metaverse Blockchain.  </p>
+            <p translate="FOOTER.TEXT"> </p>
           <div class="footer-text">
               <p>Copyright 2016-2018 Metaverse Foundation. All Rights Reserved.
 </p>
           </div>
         </div>
         <div class="col-md-5">
-            <h1>Contact Us</h1>
+            <h1 translate="FOOTER.HELP_TEXT"></h1>
             <div class="pull-right">
             <a class="github-button pull-right" href="https://github.com/mvs-org/lightwallet/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue mvs-org/lightwallet on GitHub">Issue</a>
             </div>
-	    <p translate="MENU.FEATURES"></p>
+	    <p translate="FOOTER.CONTACT_US"></p>
             <div class="social">
                 <ul class="n_nav">
                     <li><a href="http://blog.mvs.org/" target="blank"><img src="images/blog.svg" class="img-responsive" alt="blog"></a></li>

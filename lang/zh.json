@@ -1,0 +1,49 @@
+{
+  "MENU": {
+	  "FEATURES": "特性",
+	  "ABOUT": "轻钱包介绍"
+  },
+  "INTRO": {
+	  "HEADLINE": "轻钱包",
+	  "TEXT": "元界轻钱包使用户利用元界底层设施在区块链上便捷地创建数字身份、注册数字资产。",
+	  "ENTER_WALLET": "进入轻钱包"
+  },
+  "GET_IT" : {
+	  "OPEN_IN_BROWSER": "在浏览器中打开"
+  },
+  "FEATURES" : {
+	  "HEADLINE": "钱包特性",
+	  "TEXT": "最新的SuperNova 版本支持以下功能",
+	  "DIGITAL_IDENTITY": "数字身份",
+	  "DIGITAL_IDENTITY_TEXT": "创建您的数字身份",
+	  "MIT": "MIT 资产",
+	  "MIT_TEXT": "创建您的MIT资产（元界可识别资产）。每个MIT都对应元界区块链上的一个实体资产记录，MIT可与其他数字身份交易。",
+	  "CERTIFICATES": "证书",
+	  "CERTIFICATES_TEXT": "数字身份可注册MST资产证书和域名证书",
+	  "MST": "MST资产",
+	  "MST_TEXT": "您可以便捷地在元界区块链上注册MST资产（元界智能资产）",
+	  "ETP_DEPOSIT": "ETP 锁仓",
+	  "ETP_DEPOSIT_TEXT": "可在指定区块解锁并获得锁仓利息",
+	  "MULTILANGUAGE": "多种语言支持",
+	  "MULTILANGUAGE_TEXT": "轻钱包支持多种语言，如果您想提供更多的语言支持，请联系我们。"
+  },
+  "OPENSOURCE": {
+	  "HEADLINE": "喜欢这款轻钱包么？"
+  },
+  "ABOUT": {
+	  "HEADLINE": "轻钱包介绍",
+	  "OPENSOURCE": "开源",
+	  "OPENSOURCE_TEXT": "轻钱包是一个开源项目。我们欢迎有志之士加入我们的社区。",
+	  "SECURITY": "安全",
+	  "SECURITY_TEXT": "钱包私钥仅储存在您使用的设备上。所有的签名交易都在本地完成。",
+	  "SPEED": "即刻安装",
+	  "SPEED_TEXT": "轻钱包无需同步所有区块，可急速下载安装。",
+	  "MOBILE_APPS": "移动端应用程序",
+	  "MOBILE_APPS_TEXT": "您可以在浏览器登录轻钱包，也可以使用官方的安卓和iOS手机移动端轻钱包。"
+  },
+  "FOOTER": {
+	  "TEXT": "元界基金会成立宗旨是维护元界区块链的正常运营，投资和引导基于元界区块链衍生的产业链各环节发展，致力于打造一个完整、丰富的元界区。",
+	  "CONTACT_US": "联系我们",
+	  "HELP_TEXT": "如需帮助，请在Github 提交报告。您也可以通过以下渠道联系我们："
+  }
+}
