@@ -1,12 +1,18 @@
 sudo: false
 language: node_js
 node_js:
-  - "node"
+- node
 install:
-  - npm install
+- npm install
 script:
-  - npm test
-  - gulp
+- npm test
+- gulp
 cache:
   directories:
-    - node_modules
+  - node_modules
+notifications:
+  pushover:
+    api_key:
+      secure: scS2y2kgQ8SJjFYvjJyzpOp9evWOeSbTtMLSTHGie3fZKeYldEHhUo1yGrHgathRPM73v/Xu9UQJOKsIa+z3mkumhsYtCn7sa3ujnC94lXXyeVpV235j/3LuvAGxrYZLqIVLrqWbDNw76lR6Qxjo2VZ/yNyKGKZ3yq/7bt4Mp1MQzt4FfwcG9LaIZ7GWXPQAzgPeitAAJgE9Uo3lzU8Yu+FOgCOljytfOTLcOkxomzUZeB16a0qV7ucK9JMDO2UCuB6MQO+WP2pzQBwHnJqx2D0RuegmQeuvpFU9ByQp3YtZXE8uBrswpaSkJM4sG3w2P1OvUY8h0yyqqbJi9yxrtzGvEZhDwWRb/No271k+x2CSeULaw1ch8NJ+nY72rBlJZTABclzZ87PD2qBnaTt+EOkUnGh/Fn77dF7wIDD1O41nEvGpWXkZUdtwxRIRRKJvjIS5DVNKPHvlizwPRYzmmbhcsEJUfxsxEoUHfH9/SLHUIgD7+3KH/PL90SCrfYMX7sTZ2W/UqzkWFI0+dihfGSkfujPqEq/OxlOa6zc2SD2l64W4skY6QcSWuFX7ksVr3MWSyCYrWVseYKNodCs/wVhf3BfOMwet3xOWLIZeeuUN2+jskR6ZjlytJlofOE6dbCtogksXZUEjSvrDVznC//a1/KKI/7mF33VnyWB6yKQ=
+    users:
+      secure: lr2MIXjR1SeCaVtYevnlDY83tVeSDMqQsEAC13cy0VKI5JB6m07RCqxjYm7Mabc8orLW0ePc7aPD+GCZna5HK6rHukbceqHgGz0Lyb4oYvj3jyb9wZljEqeW36FM8xBnqcQq18pcefHxKw60sgN3P70wCSNqn2a/hgU+Zy7G9f4f1UmNtIXPBEsnH2q0fme0e6HUzxIGItLQ5i8HNmfwhYzy+zgViOxQMfGyECg15uvm1y081l5Tzm7Z0pFGQnsudeorCT4J++Iky7E1chSSqSSm9M/qDtMZOH2aO6Ezdsjp6XD77fYonbP/Rns1BoBjoPxkh82JdWz98uCLSyyobSFQ/VstC/9YH3vKU0VNW1U0eQZSmuCwvAegdcKFOsVMbS9eufyvMP7zFPMa8hOJVrVRBVdjoEGMNai5n0+jHO4+OV9YA9JcfyccFuyErOtrh5SjeTigs1lfHU7PsKq/UMTlL1Aa167Ge+hxC2VrqfdMRduZ1GWh+95lluotq9/CoIe+qy1/onhKwsRUBu/uAhqfOWR6OOwX2UXq324XS3hQVBxi/Y7J14tl8vq5QSAOjXCe+ThQ7Td6v8QKWdPjToj6pExhfVAR/PqQDUF0/T519/Fw7Sr7g2tpyK5Ycv3U+3l9IsP3ZLmShGsaH7Lb5Hj3i/CE4O3CF2PNaYAzK98=
