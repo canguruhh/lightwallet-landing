@@ -21,6 +21,13 @@ gulp.task('html', function() {
         .pipe(gulp.dest('./dist/'))
 });
 
+gulp.task('robots', function() {
+    return gulp.src([
+            'robots.txt'
+        ])
+        .pipe(gulp.dest('./dist/'))
+});
+
 
 gulp.task('lang', function() {
     return gulp.src([
@@ -136,7 +143,7 @@ gulp.task('js:minify', function() {
 gulp.task('js', ['js:minify']);
 
 // Default task
-gulp.task('default', ['css', 'lang', 'js', 'vendor', 'html', 'assets']);
+gulp.task('default', ['css', 'lang', 'js', 'vendor', 'html', 'assets', 'robots']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
