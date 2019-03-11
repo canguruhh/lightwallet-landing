@@ -25,6 +25,8 @@
         "MST_TEXT": "You can easily register your own MST (Metaverse Smart Token) on the Blockchain.",
         "ETP_DEPOSIT": "ETP Deposit",
         "ETP_DEPOSIT_TEXT": "Lock your ETP for a number of blocks and earn interest.",
+        "ETP_MULTISIG": "Multisig",
+        "ETP_MULTISIG_TEXT": "Use multisignature to send and receive ETP and MST.",
         "MULTILANGUAGE": "Multilanguage",
         "MULTILANGUAGE_TEXT": "The wallet supports various languages. We are always happy about new translation. Please contact us if you want to support."
     },
