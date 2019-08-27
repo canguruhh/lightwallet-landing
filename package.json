@@ -8,8 +8,8 @@
         "build": "./node_modules/gulp/bin/gulp.js"
     },
     "keywords": [
-        "Metaverse",
-        "Blockchain",
+        "metaverse",
+        "blockchain",
         "lightwallet"
     ],
     "homepage": "https://www.myetpwallet.com",
