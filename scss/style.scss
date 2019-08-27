@@ -77,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
 p {
 }
 
+.feature-single p {
+	min-height: 3em;
+}
+
 ::-moz-selection {
     color: #FFFFFF;
     background: #1eb858;
@@ -903,18 +907,18 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
   }
 }
 
-.pitch {
+.download-section {
 	padding: 100px 0 100px 0;
 	background: #F2F2F2;
 
-  .pitch-content{
+  .download-content{
       img{
           margin-top: 10px;
           width: 200px;
       }
   }
 
-  .pitch-icon {
+  .download-icon {
 	    margin: 0 0 10px 0;
 	    width: 60px;
 	    height: 60px;
@@ -922,7 +926,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	    border-radius: 50%;
   }
 
-  .pitch-icon i {
+  .download-icon i {
 	    font-size: 54px;
 	    color: black;
 	    position: absolute;
@@ -931,11 +935,11 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	    top: 13px;
   }
 
-  .pitch-content {
+  .download-content {
 	    padding: 10px 0 50px 0;
   }
 
-  .pitch-content h1 {
+  .download-content h1 {
 	    font-size: 21px;
 	    font-weight: 600;
 	    line-height: 1.2;
@@ -944,7 +948,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	    margin: 0 0 10px 0;
   }
 
-  .pitch-content p {
+  .download-content p {
 	    font-size: 14px;
 	    line-height: 1.5;
 	    color: #A1A1A1;
@@ -1142,13 +1146,13 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	padding: 100px 0 100px 0;
 }
 
-.app-features h1 {
+.container h2 {
 	font-size: 37px;
 	font-weight: 900;
 	margin: 0 0 10px 0;
 }
 
-.app-features p {
+.container p {
 	font-size: 16px;
 	font-weight: 400;
 	color: #A1A1A1;

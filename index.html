@@ -33,6 +33,7 @@
                         <a class="navbar-brand page-scroll" href="#main"><img src="icons/metaverse.png" height="48" alt="Metaverse" /></a> </div>
                     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav" ng-controller="language">
+                            <li><a class="page-scroll" href="#download" translate="MENU.DOWNLOAD"></a></li>
                             <li><a class="page-scroll" href="#features" translate="MENU.FEATURES"></a></li>
                             <li><a class="page-scroll" href="#about" translate="MENU.ABOUT"></a></li>
                             <li ng-hide="language=='zh'"><a ng-click="changeLanguage('zh')">中文</a></li>
@@ -43,6 +44,7 @@
             </nav>
         </div>
         <div class="main app form" id="main">
+
             <div class="hero-section">
                 <div class="container nopadding">
                     <div class="col-md-5"> <img class="img-responsive wow fadeInUp mac" data-wow-delay="0.1s" src="images/mac.png" alt="App" /> </div>
@@ -74,12 +76,14 @@
                 </div>
             </div>
 
-            <div class="pitch text-center" id="enter">
+            <div class="download-section text-center" id="download">
                 <div class="container">
+                    <h2 class="wow fadeInDown" data-wow-delay="0.1s" translate="GET_IT.HEADLINE"></h2>
+                    <p class="wow fadeInDown" data-wow-delay="0.2s" translate="GET_IT.TEXT"></p>
                     <div class="col-md-12">
                         <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
                             <a href="https://play.google.com/store/apps/details?id=com.myetpwallet.app">
-                                <div class="pitch-content">
+                                <div class="download-content">
                                     <img src="images/google-store.png"><br><br>
                                     <a href="https://metaverse.nyc3.digitaloceanspaces.com/lightwallet/app/mvs-lw-0.7.2.apk">
                                         <div class="btn btn-primary btn-action btn-fill" translate="GET_IT.DOWNLOAD_APK"></div>
@@ -89,15 +93,15 @@
                         </div>
                         <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
                             <a href="https://itunes.apple.com/us/app/myetpwallet/id1354404036">
-                                <div class="pitch-content">
+                                <div class="download-content">
                                     <img src="images/apple-store.png">
                                 </div>
                             </a>
                         </div>
                         <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
                             <a href="https://app.myetpwallet.com">
-                                <div class="pitch-icon"><i class="fas fa-globe"></i></div>
-                                <div class="pitch-content">
+                                <div class="download-icon"><i class="fas fa-globe"></i></div>
+                                <div class="download-content">
                                     <h1 translate="GET_IT.OPEN_IN_BROWSER"></h1>
                                 </div>
                             </a>
@@ -107,7 +111,7 @@
             </div>
             <div class="app-features text-center" id="features">
                 <div class="container">
-                    <h1 class="wow fadeInDown" data-wow-delay="0.1s" translate="FEATURES.HEADLINE"></h1>
+                    <h2 class="wow fadeInDown" data-wow-delay="0.1s" translate="FEATURES.HEADLINE"></h2>
                     <p class="wow fadeInDown" data-wow-delay="0.2s" translate="FEATURES.TEXT"></p>
                     <div class="col-md-4 features-left">
                         <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
@@ -126,7 +130,7 @@
                             <feature feature="'MST'" image="'icons/mst.png'"></feature>
                         </div>
                         <div class="col-md-12 wow fadeInDown" data-wow-delay="0.5s">
-                            <feature feature="'ETP_MULTISIG'" image="'icons/ETP.png'"></feature>
+                            <feature feature="'ETP_MULTISIG'" icon="'fas fa-users'"></feature>
                         </div>
                         <div class="col-md-12 wow fadeInDown" data-wow-delay="0.7s">
                             <feature feature="'CERTIFICATES'" icon="'fas fa-file-o'"></feature>
@@ -138,7 +142,7 @@
             <div class="opensource-sub">
                 <div class="container">
                     <div class="sub-inner">
-                        <h1 class="wow fadeInUp" translate="OPENSOURCE.HEADLINE"></h1>
+                        <h2 class="wow fadeInUp" translate="OPENSOURCE.HEADLINE"></h2>
                         <p>
                             <b>git clone</b> https://github.com/mvs-org/lightwallet.git<br>
                             <b>npm install</b> -g ionic<br>
@@ -157,7 +161,7 @@
 
             <div class="app-features text-center" id="about">
                 <div class="container">
-                    <h1 class="wow fadeInDown" data-wow-delay="0.2s">About</h1>
+                    <h2 class="wow fadeInDown" data-wow-delay="0.2s">About</h2>
                     <p class="wow fadeInDown" data-wow-delay="0.2s"></p>
                     <div class="col-md-3 features-left">
                         <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">

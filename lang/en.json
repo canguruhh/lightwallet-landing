@@ -1,14 +1,17 @@
 {
     "MENU": {
         "FEATURES": "Features",
-        "ABOUT": "About"
+        "ABOUT": "About",
+        "DOWNLOAD": "Download"
     },
     "INTRO": {
         "HEADLINE": "MyETPWallet",
-        "TEXT": "The Metaverse Blockchain lightwallet wallet. Use the Metaverse infrastructure to easily create a digital identity (Avatar) and register your own tokens on the Blockchain.",
+        "TEXT": "The Metaverse Blockchain lightwallet. Use the Metaverse infrastructure to easily create a digital identity (Avatar) and register your own tokens on the Blockchain.",
         "ENTER_WALLET": "Enter Wallet"
     },
     "GET_IT": {
+        "HEADLINE": "Get the Wallet",
+        "TEXT": "Get the wallet for your device and enter the Metaverse today",
         "OPEN_IN_BROWSER": "Open in browser",
         "DOWNLOAD_APK": "Download apk"
     },
@@ -16,9 +19,9 @@
         "HEADLINE": "Features",
         "TEXT": "With the latest supernova upgrade we were able to activate new functions.",
         "DIGITAL_IDENTITY": "Digital Identity",
-        "DIGITAL_IDENTITY_TEXT": "Create your own avatar.",
+        "DIGITAL_IDENTITY_TEXT": "Create your own avatar. You can also use it for decentralized authentication with 3rd parties.",
         "MIT": "IDENTIFIABLE TOKEN",
-        "MIT_TEXT": "Create your own MIT (Metaverse Identifiable Token). A MIT is a single entity record on the Metaverse Blockchain. You can freely exchange it with other avatars.",
+        "MIT_TEXT": "Create your own MIT as a single entity record on the Metaverse Blockchain. You can freely exchange it with other avatars.",
         "CERTIFICATES": "Certificates",
         "CERTIFICATES_TEXT": "Let your avatar register certificates for MST symbols and domains.",
         "MST": "Smart Tokens",
@@ -26,7 +29,7 @@
         "ETP_DEPOSIT": "ETP Deposit",
         "ETP_DEPOSIT_TEXT": "Lock your ETP for a number of blocks and earn interest.",
         "ETP_MULTISIG": "Multisig",
-        "ETP_MULTISIG_TEXT": "Use multisignature to send and receive ETP and MST.",
+        "ETP_MULTISIG_TEXT": "Create multisignature addresses to send and receive ETP and MST. Easy access to enterprise grade technology.",
         "MULTILANGUAGE": "Multilanguage",
         "MULTILANGUAGE_TEXT": "The wallet supports various languages. We are always happy about new translation. Please contact us if you want to support."
     },
