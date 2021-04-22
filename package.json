@@ -1,7 +1,7 @@
 {
     "title": "mvs-lightwallet-landing",
     "name": "mvs-lightwallet-landing",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "description": "Landing page for the Metaverse lightwallet.",
     "scripts": {
         "dev": "./node_modules/gulp/bin/gulp.js dev",
